@@ -1,0 +1,47 @@
+<template>
+<div class="slds-page-header">
+    <div class="slds-page-header__row">
+        <div class="slds-page-header__col-title">
+            <div class="slds-media">
+                <div class="slds-media__figure">
+                    <span class="slds-icon_container slds-icon-standard-opportunity" title="opportunity">
+                        <svg class="slds-icon slds-page-header__icon" aria-hidden="true">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#opportunity" />
+                        </svg>
+                        <span class="slds-assistive-text">opportunity</span>
+                    </span>
+                </div>
+                <div class="slds-media__body">
+                    <div class="slds-page-header__name">
+                        <div class="slds-page-header__name-title">
+                            <h1>
+                                <span class="slds-page-header__title slds-truncate" :title="payload.title">{{ payload.title }}</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <p class="slds-page-header__name-meta">{{ payload.subTitle }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
+
+<script>
+export default {
+    props: {
+        payload: {
+            type: Object,
+            default: function () {
+                return { 
+                    title: 'Q-Labs Corporation, 80,000 units',
+                    subTitle: 'Mark Jaeckal • Unlimited Customer • 11/13/15' 
+                }
+            }
+        }
+    }
+}
+</script>
+
+<style>
+</style>

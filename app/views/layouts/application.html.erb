@@ -5,7 +5,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" type="text/css" href="/assets/styles/salesforce-lightning-design-system.min.css">
+    <%= stylesheet_pack_tag 'hello_vue' %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
+    
+    <%= javascript_pack_tag 'hello_vue' %>
     <%= javascript_include_tag 'application' %>
   </head>
 
